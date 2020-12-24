@@ -1,0 +1,54 @@
+:root {
+    --root-bg-color: white;
+    --root-font-color: black;
+    --root-footer: #e3e3e3;
+    --root-link: #0065b3;
+}
+
+body {
+    background-color: var(--root-bg-color);
+    color: var(--root-font-color);
+    margin: unset;
+    padding: unset;
+    font-family: Segoe UI,SegoeUI,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+a {
+    color: var(--root-link);
+}
+
+main {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto 6fr 0.5fr;
+    grid-template-areas:
+         "header"
+         "nav"
+         "section"
+         "footer";
+}
+
+
+header{
+    grid-area: header;
+    padding: 8px;
+}
+
+footer{
+    grid-area: footer;
+    background-color: var(--root-footer);
+}
+
+footer div {
+    margin: 16px;
+}
+
+section{
+    grid-area: section;
+    padding: 8px;
+}
+
+nav{
+    grid-area: nav;
+    background-color: blue;
+}

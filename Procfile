@@ -1,0 +1,1 @@
+web: java -Dquarkus.http.port=$PORT $JAVA_OPTS -jar build/micro-front-ends-1.0.0-runner.jar
